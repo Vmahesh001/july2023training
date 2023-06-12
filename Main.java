@@ -1,17 +1,13 @@
-import java.util.Scanner;
-public class MainFactors {
-
-  public static void main(String[] args) {
-Scanner sc=new Scanner(System.in);
-    int number =sc.nextInt();
-
-    System.out.print("Factors of " + number + " are: ");
-    for (int i = 1; i <= number; ++i) {
-      if (number % i == 0) {
-        System.out.print(i + " ");
-      }
-    }
-  }
+class Main
+{
+public static void main(String args[])
+{
+int[] age={12,4,5,2,5};
+System.out.println("accesing elements of array");
+System.out.println("first element:"+age[0]);
+System.out.println("second element:"+age[1]);
+System.out.println("third element:"+age[2]);
+System.out.println("fourth element:"+age[3]);
+System.out.println("fifth element:"+age[4]);
 }
-
-
+}
