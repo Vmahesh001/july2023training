@@ -1,23 +1,31 @@
-class Animal
-{
-public void move()
-{
-System.out.println("anything");
-}
-}class Dog extends Animal
-{
-public void move()
-{
-System.out.println("dog");
-}
-}
+import java.io.*;
+import java.util.*;
 class Test
 {
+static boolean isNumber(String s)
+{
+for (int i=0;i<s.length();i++)
+{
+if(Character.isDigit(s.charAt(i))==false)
+{
+return false;
+}
+}
+return true;
+}
 public static void main(String args[])
 {
-Animal a1=new Animal();
-Animal a2=new Dog();
-a1.move();
-a2.move();
+Scanner sc=new Scanner(System.in);
+String str=sc.next();
+if(isNumber(str))
+{
+System.out.println("integer");
+}
+else
+{
+System.out.print("String");
 }
 }
+}
+
+
